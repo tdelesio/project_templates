@@ -1,0 +1,47 @@
+#security:
+#  oauth2:
+#    resource:
+#      jwt:
+#        key-uri: http://auth.delesio.com:9999/auth/oauth/token_key
+#  basic:
+#    enabled: false
+#  user:
+#    name: admin
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka.techolution.com:8761/eureka/
+  instance:
+    hostname: .techolution.com
+    status-page-url: http://.techolution.com:${server.port}/info
+    health-check-url: http://.techolution.com:${server.port}/health
+    home-page-url: http://.techolution.com:${server.port}/
+
+# spring:
+#   jpa:
+#     show-sql: true
+#     hibernate:
+#       ddl-auto: update
+#     properties:
+#       hibernate:
+#         dialect: org.hibernate.dialect.MySQL5Dialect
+        
+#   datasource:
+#     url: jdbc:mysql://hiredbinstance.c6clqqfgzvek.us-east-1.rds.amazonaws.com:3306/hiretecholutiondb?useSSL=false
+#     username: admin
+#     password: techo#2017
+#     driver-class-name: com.mysql.jdbc.Driver
+
+#   data:
+#     mongodb:
+#       host: ds149382.mlab.com
+#       port: 49382
+#       database: techolutiondb
+#       username: admin
+#       password: techo#2017
+
+# redis:
+#   hostname: redis
+#   port: 6379
+
